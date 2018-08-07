@@ -5,7 +5,7 @@ export default {
   // 设置token
   [SET_TOKEN] (state, payload) {
     state.token = payload
-    // STORAGE.setItem('token', payload)
+    STORAGE.setItem('token', payload)
   },
   // 设置登录态
   [SET_HAS_LOGIN] (state, payload) {

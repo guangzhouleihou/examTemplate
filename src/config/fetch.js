@@ -30,12 +30,12 @@ axios.interceptors.response.use(response => {
       case '4010':
       case '4011':
       case '4012':
-        store.commit('LOGOUT')
-        console.log(router)
-        router.replace({
-          path: 'login',
-          query: {redirect: router.currentRoute.fullPath}
-        })
+        // store.commit('LOGOUT')
+        // console.log(router)
+        // router.replace({
+        //   path: 'login',
+        //   query: {redirect: router.currentRoute.fullPath}
+        // })
         break
     }
     return response

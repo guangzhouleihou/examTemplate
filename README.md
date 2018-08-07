@@ -1,4 +1,4 @@
-# OOLA-CMS
+# examTemplate
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 ## 项目简介
 JS框架采用Vue全家桶，CSS采用less、scss，UI采用element-ui
@@ -38,7 +38,7 @@ ___
 │   ├── assets                       # 静态资源
 │   ├── main.js                      # Vue entry
 │   ├── router                       # 路由 #TODO: 请按模块划分路由文件
-│   ├── service                      # APIs
+│   ├── service                      # API接口存放
 │   ├── store                        # Vuex store，同路由，请按模块划分 store 文件
 │   ├── styles                       # 通用样式，可以通过 @import 'absolute-path' 引入
 │   └── pages                        # 页面放在此，每个页面都应该由组件组成
@@ -59,11 +59,5 @@ ___
 ___
 ## 代码风格
 项目已使用 eslint 的 standard 标准，除了 linter 之外，还有一些约定，请查看 [gitlab](https://gitlab.gzleihou.cn/FE/docs)上的文档。
-___
-## 开发注意事项
-* 在开发页面时，请务必先将页面中的组件抽取出来，放进 components/business 相应的业务文件夹中，因为基于组件的开发模式的核心是**可复用和分治**
-* **DRY！** 如果你发现你需要复制粘贴代码的时候，便是执行 DRY 原则的时机，请将通用的逻辑根据实际需要放进 mixin, directive 等可复用的容器里。
-* created vs. mounted. 当你的业务代码不需要操作原生 dom （例如通过 vm.$refs 或 vm.$el 引用)的时候，请将代码放进 created 钩子函数。此举主要是为及后的 ssr 做准备（服务端的 vue 实例不支持 mounted 钩子函数），而且作这样的区分可以另代码可读性更高。
-* 待补充...
 
 

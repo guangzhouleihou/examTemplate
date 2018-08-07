@@ -1,0 +1,232 @@
+/**
+ * 方便的样式
+ * ---------------------------------------------------------
+ */
+
+@import './config.scss';
+
+html, body {
+  font-family: PingFangSC-Medium;
+}
+
+/**
+ * width
+ * ---------------------------------------------------------
+ */
+.width100 {
+  width: 100%;
+}
+.width850px {
+  width: 850px;
+}
+.width220px {
+  width: 220px;
+}
+.width200px {
+  width: 200px;
+}
+.width120px {
+  width: 120px;
+}
+// 针对.button-row，写的配套样式
+.width120 {
+  width: 120px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.width100px {
+  width: 100px;
+}
+
+/**
+ * line-height
+ * ---------------------------------------------------------
+ */
+.line-height0 {
+  line-height: 0;
+}
+.line-height25 {
+  line-height: 25px;
+}
+.line-height36 {
+  line-height: 36px;
+}
+.line-height40 {
+  line-height: 40px;
+}
+.lh37 {
+  width: 100%;
+  height: 37px;
+  line-height: 37px;
+}
+
+/**
+ * display
+ * ---------------------------------------------------------
+ */
+.dib {
+  display: inline-block;
+}
+.db {
+  display: block;
+}
+.dn {
+  display: none;
+}
+.oh {
+  overflow: hidden;
+}
+
+/**
+ * 好用的 padding
+ * ---------------------------------------------------------
+ */
+.pt15 {
+  display: inline-block;
+  padding-top: 15px;
+}
+.pt10 {
+  display: inline-block;
+  padding-top: 10px;
+}
+
+/**
+ * 好用的 margin
+ * ---------------------------------------------------------
+ */
+// margin-bottom
+.mb35 {
+  margin-bottom: 35px;
+}
+.mb25 {
+  margin-bottom: 25px;
+}
+.mb22 {
+  margin-bottom: 22px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+// margin-left
+.ml33 {
+  margin-left: 33px;
+}
+.ml30 {
+  margin-left: 30px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.ml15 {
+  margin-left: 15px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml5 {
+  margin-left: 5px;
+}
+// margin-right
+.mr50 {
+  margin-right: 50px;
+}
+.mr30 {
+  margin-right: 30px;
+}
+.mr15 {
+  display: inline-block;
+  margin-right: 15px;
+}
+.mr10 {
+  display: inline-block;
+  margin-right: 10px;
+}
+.mr5 {
+  margin-right: 5px;
+}
+// margin-top
+.mt80 {
+  margin-top: 80px;
+}
+.mt60 {
+  margin-top: 60px;
+}
+.mt50 {
+  margin-top: 50px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mt22 {
+  margin-top: 22px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt7-5 {
+  margin-top: 7.5px;
+}
+
+/**
+ * 其它
+ * ---------------------------------------------------------
+ */
+.font-size-12px {
+  font-size: 12px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.text-center {
+  text-align: center;
+}
+.fw {
+  font-weight: bold;
+}
+
+// alert弹窗，查看大图样式
+.alert-style {
+  width: auto;
+  max-width: 80vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  margin-top: 2vh;
+  img {
+    width: 100%;
+  }
+}
+
+.table-link-spec {
+  font-size: 12px;
+  color: $theme-green;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.card-wrap {
+  border: 1px solid #e6ebf5;
+  padding: 20px 10px;
+  min-height: 78vh;
+  .form-item {
+    width: 280px;
+  }
+}
+
+.com-info {
+  font-size: 12px;
+  color: #999;
+}
+
+.cursor {
+  cursor: pointer;
+  text-decoration: underline;
+}

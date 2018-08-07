@@ -1,0 +1,137 @@
+/**
+ * 重置ele框架的样式
+ * ---------------------------------------------------------
+ */
+
+.el-input__inner {
+  height: 36px;
+}
+.el-button {
+  padding: 10px 20px;
+}
+.el-range-editor.el-input__inner {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.el-table th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center!important;
+}
+
+// sidebar
+.el-submenu__title {
+  height: 50px;
+  line-height: 50px;
+}
+.el-submenu .el-menu-item {
+  height: 45px;
+  line-height: 45px;
+}
+
+// tag
+.el-tag {
+  height: 28px;
+  line-height: 26px;
+}
+
+.el-input__suffix {
+  cursor: pointer;
+}
+
+// loading-mask
+.el-loading-mask {
+  z-index: 999;
+}
+
+
+// tree
+.el-tree {
+  border: 1px solid #d8dce5;
+  border-bottom: 0;
+}
+.el-tree-node__content {
+  height: 40px;
+  border-bottom: 1px solid #d8dce5;
+}
+.el-tree-node__label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// button
+.el-button--primary.is-plain {
+  background: #fff;
+  border-color: $theme-orange;
+}
+
+// datePicker
+.el-date-table td span {
+  font-size: 12px;
+}
+.el-date-editor .el-range-input {
+  background-color: transparent;
+}
+
+// pagination
+.el-pagination {
+  font-weight: normal;
+}
+.el-pagination .el-select .el-input .el-input__inner {
+  height: 32px;
+}
+.el-pagination__editor.el-input .el-input__inner {
+  height: 32px;
+  min-width: 32px;
+}
+.el-pager li {
+  min-width: 32px;
+  height: 32px;
+  line-height: 32px;
+}
+
+// tooltip
+.el-tooltip__popper {
+  max-width: 350px;
+}
+
+// pagination
+.el-pagination {
+  .btn-prev {
+    height: 34px;
+    border: 1px solid #dcdfe6; 
+  }
+  .el-pager {
+    border-top: 1px solid #dcdfe6;
+    border-bottom: 1px solid #dcdfe6;
+    li {
+      border: 0;
+      border-right: 1px solid #dcdfe6;
+      &.active {
+        color: #fff;
+        background-color: #F7BA2A;
+      }
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+  .btn-next {
+    height: 34px;
+    border: 1px solid #dcdfe6; 
+  }
+  .el-input__inner {
+    height: 34px!important;
+    border-radius: 0!important;
+  }
+}
+
+// button
+.el-button {
+  padding: 10px 20px;
+}
+.el-dropdown-menu__item:not(.is-disabled):hover {
+  color: $theme-orange;
+  background-color: #f5f7fa;
+}

@@ -1,14 +1,14 @@
 # examTemplate
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 ## 项目简介
-JS框架采用Vue全家桶，CSS采用less、scss，UI采用element-ui
+JS框架采用Vue全家桶，CSS采用less、scss，UI采用element-ui，富文本编辑器采用vue-quill-editor
 * [Vue](https://vuejs.org/)
 * [Vue-router](https://router.vuejs.org/zh-cn/)
 * [Vuex](https://vuex.vuejs.org/zh-cn/)
 * [element-ui](http://element-cn.eleme.io/#/zh-CN/component/installation)
 * [less](http://lesscss.cn/features/)
 * [scss](https://www.sass.hk/guide/)
-
+* [vue-quill-editor](https://github.com/surmon-china/vue-quill-editor)
 ___
 ## 项目结构
 ```bash
@@ -57,7 +57,35 @@ ___
 * 详情请参考 [vue-template](https://vuejs-templates.github.io/webpack/commands.html)
 
 ___
-## 代码风格
-项目已使用 eslint 的 standard 标准，除了 linter 之外，还有一些约定，请查看 [gitlab](https://gitlab.gzleihou.cn/FE/docs)上的文档。
 
+## 招聘环节
+ - 笔试（3个小时以内的时间，提前完成则提前结束）
+ - 面试 （笔试通过后才进入面试，大概15-30分钟）
+
+## 评分标准
+该项目总分为10分，一共有三个主要模块，其分值如下
+ - 登录页
+    - 静态页 1分
+    - 完成数据接口对接 1分
+ - 数据列表
+    - 静态页 2分
+    - 完成数据接口对接 2分
+ - 编辑、增加
+    - 静态页 2分
+    - 完成数据接口对接 2分
+    
+ ## 笔试流程
+ - 使用自己的github账号clone本项目
+ - 参照[线上demo](http://baidu.com)尽可能多地完成该项目
+ - 将完成的项目发起pull request推送到主项目，提交的信息为
+    date/name: 雷猴招聘，例如 2018/8/7 卓钟侄：雷猴招聘。
+    并且将仓库地址发给HR备份
+ - 笔试结束后请向HR演示效果，HR根据效果进行打分
+    
+## 备注
+  - 项目中已经存在一个简单的example给面试者做简单的参考
+  - 请按照上文描述的目录结构划分合理地放置代码文件
+  - store目录下已经提供了一些基本你的vuex的一些封装，开发者根据自身情况考虑是否使用
+  - 如果对接口的调用存放不清楚可参考service目录下的example   
+ 
 

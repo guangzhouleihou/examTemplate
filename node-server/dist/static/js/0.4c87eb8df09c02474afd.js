@@ -1,0 +1,2 @@
+webpackJsonp([0],{GhND:function(n,t){},TTwy:function(n,t,e){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r=e("GhND"),u=e.n(r);for(var c in r)"default"!==c&&function(n){e.d(t,n,function(){return r[n]})}(c);var i=e("g0Nf");var a=function(n){e("vqHc")},f=e("VU/8")(u.a,i.a,!1,a,null,null);t.default=f.exports},g0Nf:function(n,t,e){"use strict";var r={render:function(){var n=this.$createElement;return(this._self._c||n)("div",[this._v("这是注册页面")])},staticRenderFns:[]};t.a=r},vqHc:function(n,t){}});
+//# sourceMappingURL=0.4c87eb8df09c02474afd.js.map

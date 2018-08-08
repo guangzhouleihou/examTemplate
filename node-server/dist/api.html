@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://www.zybuluo.com/zhuozhongzhi/note/1242772 -->
+<html class="theme theme-white"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta name="description" content="Cmd Markdown 编辑阅读器，支持实时同步预览，区分写作和阅读模式，支持在线存储，分享文稿网址。">
+    <meta name="author" content="Jiawei Zhang">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>以下共包含了6个接口 - 作业部落 Cmd Markdown 编辑阅读器</title>
+
+
+    <link href="https://www.zybuluo.com/static/img/favicon.png" type="image/x-icon" rel="icon">
+
+    <link href="./以下共包含了6个接口 - 作业部落 Cmd Markdown 编辑阅读器_files/1bc053c8.base.lib.min.css" rel="stylesheet" media="screen">
+
+
+    
+    <!-- id="prettify-style" will be used to get the link element below and change href to change prettify code, so it can't be in beginmin/endmin block. -->
+    <link id="prettify-style" href="./以下共包含了6个接口 - 作业部落 Cmd Markdown 编辑阅读器_files/prettify-cmd.css" type="text/css" rel="stylesheet">
+    <!--
+    <link id="mermaid-style" href="https://www.zybuluo.com/static/editor/libs/mermaid/mermaid.forest.css" type="text/css" rel="stylesheet">
+    -->
+    <link href="./以下共包含了6个接口 - 作业部落 Cmd Markdown 编辑阅读器_files/45c7d56d.layout.min.css" rel="stylesheet" media="screen">
+
+
+    
+
+    <script async="" src="./以下共包含了6个接口 - 作业部落 Cmd Markdown 编辑阅读器_files/analytics.js.下载"></script><script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-44461741-1', 'zybuluo.com');
+      ga('send', 'pageview');
+    </script>
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style></head>
+
+<body class="theme  theme-white pace-done"><div id="MathJax_Message" style="display: none;"></div><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+
+    <div id="global-prompt-alert" class="alert alert-warning hide">
+        <span id="global-prompt-message"><strong>通告：</strong>验证邮箱以开启部落所有功能，例如：评注交流。我们曾向您的邮箱 920026184@qq.com 发送过验证邮件，您也可以<a id="user-settings-resend" href="https://www.zybuluo.com/settings/account"> 重新发送 </a>或者<a id="user-settings-update-email" href="https://www.zybuluo.com/settings/account"> 更新邮箱 </a>。</span>
+        <a id="close-global-prompt-alert" href="https://www.zybuluo.com/zhuozhongzhi/note/1242772">[关闭]</a>
+    </div>
+
+    <!-- zybuluo's body -->
+    
+
+
+
+
+
+
+
+<!-- mdeditor's body -->
+
+
+
+
+
+
+<div id="editor-reader-full" class="editor-reader-full-shown" style="position: static; padding-right: 75px;">
+    <div id="reader-full-topInfo" class="reader-full-topInfo-shown">
+        <span>
+            <code>@zhuozhongzhi</code>
+        </span>
+        <code><span class="article-updated-date">2018-08-08 12:15</span></code>
+        <code><span>字数 </span><span class="article-characters">4050</span></code>
+        <code><span>阅读 </span><span class="article-read">6</span></code>
+    </div>
+    <div id="wmd-preview" class="wmd-preview wmd-preview-full-reader" data-medium-element="true" style="left: 0px;"><div class="md-section-divider"></div><div class="md-section-divider"></div><h1 data-anchor-id="ttyv" id="以下共包含了6个接口">以下共包含了6个接口</h1><ul data-anchor-id="x2m3">
+<li>用户登录</li>
+<li>获取队伍列表</li>
+<li>增加、编辑队伍</li>
+<li>删除队伍</li>
+<li>查看队伍详情</li>
+<li>上传图片 <br>
+<hr></li>
+</ul><div class="md-section-divider"></div><h2 data-anchor-id="9hk8" id="用户登录">用户登录</h2><p data-anchor-id="4l28"><strong>简要描述：</strong> </p><ul data-anchor-id="qe06">
+<li>登陆</li>
+</ul><p data-anchor-id="syp3"><strong>请求URL：</strong>  <br>
+- <code>/activity/channelTeam/channelTeamUser/login</code></p><p data-anchor-id="j9th"><strong>请求方式：</strong> <br>
+- POST </p><p data-anchor-id="xepj"><strong>参数：</strong> </p><table data-anchor-id="r3el" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th style="text-align:left;">参数名</th>
+ <th style="text-align:left;">必选</th>
+ <th style="text-align:left;">类型</th>
+ <th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td style="text-align:left;">account</td>
+ <td style="text-align:left;">是</td>
+ <td style="text-align:left;">string</td>
+ <td>账号  测试（admin）</td>
+</tr>
+<tr>
+ <td style="text-align:left;">password</td>
+ <td style="text-align:left;">是</td>
+ <td style="text-align:left;">string</td>
+ <td>密码   测试（123456）</td>
+</tr>
+</tbody></table><p data-anchor-id="d1ak"><strong>返回示例</strong></p><div class="md-section-divider"></div><pre class="prettyprint linenums prettyprinted" data-anchor-id="pcl1" style=""><ol class="linenums"><li class="L0"><code><span class="pun">{</span></code></li><li class="L1"><code><span class="pln">    </span><span class="str">"status"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"true"</span><span class="pun">,</span></code></li><li class="L2"><code><span class="pln">    </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"200"</span><span class="pun">,</span></code></li><li class="L3"><code><span class="pln">    </span><span class="str">"msg"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L4"><code><span class="pln">    </span><span class="str">"info"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L5"><code><span class="pln">        </span><span class="str">"token"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ7XCJpZFwiOjEsXCJ1c2VybmFtZVwiOlwiYWRtaW5cIixcImNoYW5uZWxcIjoxLFwiY2xpZW50T3JNYW5hZ2VcIjo1LFwiY3JlYXRlRGF0ZVwiOlwiMjAxOC0wOC0wNiAxMDo1OTowOFwiLFwidG9rZW5UeXBlXCI6XCJhY2Nlc3NUb2tlblwifSIsIm5iZiI6MTUzMzUyNDM0OCwiaXNzIjoib29sYSIsImV4cCI6MTUzNDgyMDM0OCwiaWF0IjoxNTMzNTI0MzQ4LCJqdGkiOiI1MWE2ZjI2Ny04OWMzLTQ2MDEtOGNkMS1mMTEwYjk1MWU2NWUifQ.6pBy3vLKz9908f3DQthjWzaKQwHwh7lSWJ-5bvyNnpU"</span><span class="pun">,</span></code></li><li class="L6"><code><span class="pln">        </span><span class="str">"refreshToken"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ7XCJpZFwiOjEsXCJ1c2VybmFtZVwiOlwiYWRtaW5cIixcImNoYW5uZWxcIjoxLFwiY2xpZW50T3JNYW5hZ2VcIjo1LFwiY3JlYXRlRGF0ZVwiOlwiMjAxOC0wOC0wNiAxMDo1OTowOFwiLFwidG9rZW5UeXBlXCI6XCJyZWZyZXNzVG9rZW5cIn0iLCJuYmYiOjE1MzM1MjQzNDgsImlzcyI6Im9vbGEiLCJleHAiOjE1NDEzMDAzNDgsImlhdCI6MTUzMzUyNDM0OCwianRpIjoiYTU4MzFjODktY2M4NS00NTgyLThlMzEtM2FlMDU2MDY4MDM1In0.8cjjAlvQduiUXPCl0hU_Pp7nJYm0v8eEdc-IzaEdkVs"</span><span class="pun">,</span></code></li><li class="L7"><code><span class="pln">        </span><span class="str">"expireIn"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1296000000</span><span class="pun">,</span></code></li><li class="L8"><code><span class="pln">        </span><span class="str">"refreshTokenExpireIn"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">7776000000</span><span class="pun">,</span></code></li><li class="L9"><code><span class="pln">        </span><span class="str">"isRegist"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span></code></li><li class="L0"><code><span class="pln">    </span><span class="pun">}</span></code></li><li class="L1"><code><span class="pun">}</span></code></li></ol></pre><p data-anchor-id="1roy"><strong>返回参数说明</strong> </p><table data-anchor-id="n8vn" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th style="text-align:left;">参数名</th>
+ <th style="text-align:left;">类型</th>
+ <th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td style="text-align:left;">token</td>
+ <td style="text-align:left;">string</td>
+ <td>token</td>
+</tr>
+</tbody></table><p data-anchor-id="ye7k"><strong>备注</strong> </p><ul data-anchor-id="jbbb">
+<li>更多返回错误代码请看首页的错误代码描述 <br>
+<hr></li>
+</ul><div class="md-section-divider"></div><h2 data-anchor-id="mqol" id="获取队伍列表">获取队伍列表</h2><p data-anchor-id="3f8a"><strong>简要描述：</strong> </p><ul data-anchor-id="iw0q">
+<li>列表</li>
+</ul><p data-anchor-id="f22n"><strong>请求URL：</strong>  <br>
+- <code>/activity/channelTeam/mbaManage/getList</code></p><p data-anchor-id="84p0"><strong>请求方式：</strong> <br>
+- POST / GET</p><p data-anchor-id="43ji"><strong>授权：</strong>  <br>
+- 需要授权token(参考首页说明文档)</p><p data-anchor-id="sewu"><strong>参数：</strong>  <br>
+- 可分页(参数参考首页说明文档)</p><table data-anchor-id="8teg" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th style="text-align:left;">参数名</th>
+ <th style="text-align:left;">必选</th>
+ <th style="text-align:left;">类型</th>
+ <th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td style="text-align:left;">activityId</td>
+ <td style="text-align:left;">是</td>
+ <td style="text-align:left;">int</td>
+ <td>活动id  固定值为1031</td>
+</tr>
+</tbody></table><p data-anchor-id="i60r"><strong>返回示例</strong></p><div class="md-section-divider"></div><pre class="prettyprint linenums prettyprinted" data-anchor-id="nxyi" style=""><ol class="linenums"><li class="L0"><code><span class="pun">{</span></code></li><li class="L1"><code><span class="pln">    </span><span class="str">"status"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"true"</span><span class="pun">,</span></code></li><li class="L2"><code><span class="pln">    </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"200"</span><span class="pun">,</span></code></li><li class="L3"><code><span class="pln">    </span><span class="str">"msg"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L4"><code><span class="pln">    </span><span class="str">"info"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L5"><code><span class="pln">        </span><span class="str">"pageNum"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span></code></li><li class="L6"><code><span class="pln">        </span><span class="str">"pageSize"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span></code></li><li class="L7"><code><span class="pln">        </span><span class="str">"startRow"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span></code></li><li class="L8"><code><span class="pln">        </span><span class="str">"endRow"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span></code></li><li class="L9"><code><span class="pln">        </span><span class="str">"total"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">11</span><span class="pun">,</span></code></li><li class="L0"><code><span class="pln">        </span><span class="str">"pages"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span></code></li><li class="L1"><code><span class="pln">        </span><span class="str">"result"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span></code></li><li class="L2"><code><span class="pln">            </span><span class="pun">{</span></code></li><li class="L3"><code><span class="pln">                </span><span class="str">"teamName"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"234"</span><span class="pun">,</span></code></li><li class="L4"><code><span class="pln">                </span><span class="str">"teamTitle"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"234"</span><span class="pun">,</span></code></li><li class="L5"><code><span class="pln">                </span><span class="str">"teamImg"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://oola-oss.oss-cn-shenzhen.aliyuncs.com/oola-oss/imgs/20180530/20180530173258733qyy.jpg"</span><span class="pun">,</span></code></li><li class="L6"><code><span class="pln">                </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100037</span><span class="pun">,</span></code></li><li class="L7"><code><span class="pln">                </span><span class="str">"activityId"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1011</span><span class="pun">,</span></code></li><li class="L8"><code><span class="pln">                </span><span class="str">"upCount"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span></code></li><li class="L9"><code><span class="pln">                </span><span class="str">"descr"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L0"><code><span class="pln">                </span><span class="str">"surplus"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L1"><code><span class="pln">                </span><span class="str">"thisActivityUpCount"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L2"><code><span class="pln">                </span><span class="str">"sort"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L3"><code><span class="pln">                </span><span class="str">"oolaBeanCount"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span></code></li><li class="L4"><code><span class="pln">            </span><span class="pun">},</span></code></li><li class="L5"><code><span class="pln">            </span><span class="pun">{</span></code></li><li class="L6"><code><span class="pln">                </span><span class="str">"teamName"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"asdasd"</span><span class="pun">,</span></code></li><li class="L7"><code><span class="pln">                </span><span class="str">"teamTitle"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"asdasd"</span><span class="pun">,</span></code></li><li class="L8"><code><span class="pln">                </span><span class="str">"teamImg"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://oola-oss.oss-cn-shenzhen.aliyuncs.com/oola-oss/imgs/20180530/20180530174757916drA.jpg"</span><span class="pun">,</span></code></li><li class="L9"><code><span class="pln">                </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100044</span><span class="pun">,</span></code></li><li class="L0"><code><span class="pln">                </span><span class="str">"activityId"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1011</span><span class="pun">,</span></code></li><li class="L1"><code><span class="pln">                </span><span class="str">"upCount"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span></code></li><li class="L2"><code><span class="pln">                </span><span class="str">"descr"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L3"><code><span class="pln">                </span><span class="str">"surplus"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L4"><code><span class="pln">                </span><span class="str">"thisActivityUpCount"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L5"><code><span class="pln">                </span><span class="str">"sort"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L6"><code><span class="pln">                </span><span class="str">"oolaBeanCount"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span></code></li><li class="L7"><code><span class="pln">            </span><span class="pun">}</span></code></li><li class="L8"><code><span class="pln">        </span><span class="pun">],</span></code></li><li class="L9"><code><span class="pln">        </span><span class="str">"orderBy"</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span></code></li><li class="L0"><code><span class="pln">    </span><span class="pun">}</span></code></li><li class="L1"><code><span class="pun">}</span></code></li></ol></pre><p data-anchor-id="wmm7"><strong>返回参数说明</strong> </p><table data-anchor-id="gmwr" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th style="text-align:left;">参数名</th>
+ <th style="text-align:left;">类型</th>
+ <th style="text-align:left;">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td style="text-align:left;">id</td>
+ <td style="text-align:left;">number</td>
+ <td style="text-align:left;">队伍id</td>
+</tr>
+<tr>
+ <td style="text-align:left;">teamName</td>
+ <td style="text-align:left;">string</td>
+ <td style="text-align:left;">队伍名称</td>
+</tr>
+<tr>
+ <td style="text-align:left;">teamImg</td>
+ <td style="text-align:left;">string</td>
+ <td style="text-align:left;">队伍图片地址</td>
+</tr>
+<tr>
+ <td style="text-align:left;">leaderNickname</td>
+ <td style="text-align:left;">string</td>
+ <td style="text-align:left;">队长名称</td>
+</tr>
+<tr>
+ <td style="text-align:left;">leaderMobile</td>
+ <td style="text-align:left;">string</td>
+ <td style="text-align:left;">队长手机号码</td>
+</tr>
+<tr>
+ <td style="text-align:left;">countMoney</td>
+ <td style="text-align:left;">number</td>
+ <td style="text-align:left;">总共捐赠噢啦豆数量</td>
+</tr>
+<tr>
+ <td style="text-align:left;">countOrder</td>
+ <td style="text-align:left;">number</td>
+ <td style="text-align:left;">总共回收订单数量</td>
+</tr>
+<tr>
+ <td style="text-align:left;">statusName</td>
+ <td style="text-align:left;">String</td>
+ <td style="text-align:left;">状态名称</td>
+</tr>
+<tr>
+ <td style="text-align:left;">status</td>
+ <td style="text-align:left;">number</td>
+ <td style="text-align:left;">状态</td>
+</tr>
+<tr>
+ <td style="text-align:left;">createTime</td>
+ <td style="text-align:left;">string</td>
+ <td style="text-align:left;">创建时间</td>
+</tr>
+<tr>
+ <td style="text-align:left;">remark</td>
+ <td style="text-align:left;">string</td>
+ <td style="text-align:left;">备注信息（调用过阿里鉴定后，如果包含敏感信息就会将返回信息备注在这里）</td>
+</tr>
+<tr>
+ <td style="text-align:left;">teamTitle</td>
+ <td style="text-align:left;">string</td>
+ <td style="text-align:left;">队伍描述</td>
+</tr>
+<tr>
+ <td style="text-align:left;">hot</td>
+ <td style="text-align:left;">int</td>
+ <td style="text-align:left;">点赞数</td>
+</tr>
+<tr>
+ <td style="text-align:left;">descr</td>
+ <td style="text-align:left;">string</td>
+ <td style="text-align:left;">描述</td>
+</tr>
+</tbody></table><p data-anchor-id="q15p"><strong>备注</strong> </p><hr><div class="md-section-divider"></div><h2 data-anchor-id="6wjz" id="增加修改队伍信息">增加、修改队伍信息</h2><p data-anchor-id="y3dj"><strong>简要描述：</strong> </p><ul data-anchor-id="12qi">
+<li>增加/修改队伍信息</li>
+</ul><p data-anchor-id="iv4j"><strong>请求URL：</strong>  <br>
+- <code>/activity/channelTeam/mbaManage/addOrUpdateTeam</code></p><p data-anchor-id="oq4h"><strong>请求方式：</strong> <br>
+- POST / GET</p><p data-anchor-id="1e2d"><strong>授权：</strong>  <br>
+- 需要授权token(参考首页说明文档)</p><table data-anchor-id="fkzp" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th style="text-align:left;">参数名</th>
+ <th style="text-align:left;">必选</th>
+ <th style="text-align:left;">类型</th>
+ <th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td style="text-align:left;">id</td>
+ <td style="text-align:left;">否</td>
+ <td style="text-align:left;">number</td>
+ <td>队伍id,<strong>编辑的时候传入队伍id</strong></td>
+</tr>
+<tr>
+ <td style="text-align:left;">teamName</td>
+ <td style="text-align:left;">是</td>
+ <td style="text-align:left;">string</td>
+ <td>队伍名称</td>
+</tr>
+<tr>
+ <td style="text-align:left;">teamImg</td>
+ <td style="text-align:left;">是</td>
+ <td style="text-align:left;">string</td>
+ <td>队伍图片地址</td>
+</tr>
+<tr>
+ <td style="text-align:left;">teamTitle</td>
+ <td style="text-align:left;">是</td>
+ <td style="text-align:left;">string</td>
+ <td>方案名称</td>
+</tr>
+<tr>
+ <td style="text-align:left;">activityId</td>
+ <td style="text-align:left;">是</td>
+ <td style="text-align:left;">number</td>
+ <td>活动id  固定值为1031</td>
+</tr>
+<tr>
+ <td style="text-align:left;">descr</td>
+ <td style="text-align:left;">是</td>
+ <td style="text-align:left;">string</td>
+ <td>描述</td>
+</tr>
+</tbody></table><p data-anchor-id="sj3h"><strong>返回示例</strong></p><div class="md-section-divider"></div><pre class="prettyprint linenums prettyprinted" data-anchor-id="efz8" style=""><ol class="linenums"><li class="L0"><code><span class="pun">{</span></code></li><li class="L1"><code><span class="pln">    </span><span class="str">"status"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"true"</span><span class="pun">,</span></code></li><li class="L2"><code><span class="pln">    </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"200"</span><span class="pun">,</span></code></li><li class="L3"><code><span class="pln">    </span><span class="str">"msg"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span></code></li><li class="L4"><code><span class="pun">}</span></code></li></ol></pre><p data-anchor-id="uul1"><strong>返回参数说明</strong> </p><table data-anchor-id="7sqc" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th style="text-align:left;">参数名</th>
+ <th style="text-align:left;">类型</th>
+ <th style="text-align:left;">说明</th>
+</tr>
+</thead>
+</table><p data-anchor-id="b3n2"><strong>备注</strong> </p><div class="md-section-divider"></div><h2 data-anchor-id="eits" id="删除队伍">删除队伍</h2><p data-anchor-id="rs40"><strong>简要描述：</strong> </p><ul data-anchor-id="ade8">
+<li>获取投放触发</li>
+</ul><p data-anchor-id="nnyz"><strong>请求URL：</strong>  <br>
+- <code>/activity/channelTeam/mbaManage/delete</code></p><p data-anchor-id="iui7"><strong>请求方式：</strong> <br>
+- GET </p><p data-anchor-id="ev9i"><strong>参数：</strong> </p><table data-anchor-id="0vpa" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th style="text-align:left;">参数名</th>
+ <th style="text-align:left;">必选</th>
+ <th style="text-align:left;">类型</th>
+ <th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td style="text-align:left;">id</td>
+ <td style="text-align:left;">是</td>
+ <td style="text-align:left;">int</td>
+ <td>id</td>
+</tr>
+</tbody></table><p data-anchor-id="54sy"><strong>返回示例</strong></p><div class="md-section-divider"></div><pre class="prettyprint linenums prettyprinted" data-anchor-id="x13i" style=""><ol class="linenums"><li class="L0"><code><span class="pun">{</span></code></li><li class="L1"><code><span class="pln">    </span><span class="str">"status"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"true"</span><span class="pun">,</span></code></li><li class="L2"><code><span class="pln">    </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"200"</span><span class="pun">,</span></code></li><li class="L3"><code><span class="pln">    </span><span class="str">"msg"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span></code></li><li class="L4"><code><span class="pun">}</span></code></li></ol></pre><p data-anchor-id="lzjf"><strong>返回参数说明</strong> </p><p data-anchor-id="7aww"><strong>备注</strong> </p><ul data-anchor-id="5wui">
+<li>更多返回错误代码请看首页的错误代码描述 <br>
+<hr></li>
+</ul><div class="md-section-divider"></div><h2 data-anchor-id="r0z0" id="查看详情">查看详情</h2><p data-anchor-id="0zit"><strong>简要描述：</strong> </p><ul data-anchor-id="ic29">
+<li>队伍详情</li>
+</ul><p data-anchor-id="xce4"><strong>请求URL：</strong>  <br>
+- <code>/activity/channelTeam/mbaManage/getDetail</code></p><p data-anchor-id="1pl9"><strong>请求方式：</strong> <br>
+- GET </p><p data-anchor-id="aq2i"><strong>参数：</strong> </p><table data-anchor-id="tdd8" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th style="text-align:left;">参数名</th>
+ <th style="text-align:left;">必选</th>
+ <th style="text-align:left;">类型</th>
+ <th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td style="text-align:left;">id</td>
+ <td style="text-align:left;">是</td>
+ <td style="text-align:left;">int</td>
+ <td>队伍id</td>
+</tr>
+</tbody></table><p data-anchor-id="uwv3"><strong>返回示例</strong></p><div class="md-section-divider"></div><pre class="prettyprint linenums prettyprinted" data-anchor-id="t6vs" style=""><ol class="linenums"><li class="L0"><code><span class="pun">{</span></code></li><li class="L1"><code><span class="pln">    </span><span class="str">"status"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"true"</span><span class="pun">,</span></code></li><li class="L2"><code><span class="pln">    </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"200"</span><span class="pun">,</span></code></li><li class="L3"><code><span class="pln">    </span><span class="str">"msg"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L4"><code><span class="pln">    </span><span class="str">"info"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L5"><code><span class="pln">        </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100067</span><span class="pun">,</span></code></li><li class="L6"><code><span class="pln">        </span><span class="str">"teamName"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"11111"</span><span class="pun">,</span></code></li><li class="L7"><code><span class="pln">        </span><span class="str">"teamImg"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://oola-oss.oss-cn-shenzhen.aliyuncs.com/oola-oss/imgs/20180807/201808071201374844Wz.jpg"</span><span class="pun">,</span></code></li><li class="L8"><code><span class="pln">        </span><span class="str">"leaderNickname"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L9"><code><span class="pln">        </span><span class="str">"leaderMobile"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L0"><code><span class="pln">        </span><span class="str">"createUserId"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L1"><code><span class="pln">        </span><span class="str">"countMoney"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L2"><code><span class="pln">        </span><span class="str">"countOrder"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L3"><code><span class="pln">        </span><span class="str">"remark"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L4"><code><span class="pln">        </span><span class="str">"status"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span></code></li><li class="L5"><code><span class="pln">        </span><span class="str">"createTime"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2018-08-07 12:01:45"</span><span class="pun">,</span></code></li><li class="L6"><code><span class="pln">        </span><span class="str">"updateTime"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L7"><code><span class="pln">        </span><span class="str">"deleted"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span></code></li><li class="L8"><code><span class="pln">        </span><span class="str">"teamTitle"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"1111111111111"</span><span class="pun">,</span></code></li><li class="L9"><code><span class="pln">        </span><span class="str">"channelCode"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L0"><code><span class="pln">        </span><span class="str">"activityId"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1031</span><span class="pun">,</span></code></li><li class="L1"><code><span class="pln">        </span><span class="str">"hot"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L2"><code><span class="pln">        </span><span class="str">"descr"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"&lt;p&gt;1111111111&lt;/p &gt;"</span><span class="pun">,</span></code></li><li class="L3"><code><span class="pln">        </span><span class="str">"statusName"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"开启"</span><span class="pun">,</span></code></li><li class="L4"><code><span class="pln">        </span><span class="str">"createTimeStr"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2018/08/07 12:01:45"</span></code></li><li class="L5"><code><span class="pln">    </span><span class="pun">}</span></code></li><li class="L6"><code><span class="pun">}</span></code></li></ol></pre><p data-anchor-id="pc5y"><strong>返回参数说明</strong> </p><table data-anchor-id="4715" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th style="text-align:left;">参数名</th>
+ <th style="text-align:left;">类型</th>
+ <th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td style="text-align:left;">id</td>
+ <td style="text-align:left;">number</td>
+ <td>队伍id</td>
+</tr>
+<tr>
+ <td style="text-align:left;">teamName</td>
+ <td style="text-align:left;">string</td>
+ <td>队伍名称</td>
+</tr>
+<tr>
+ <td style="text-align:left;">teamImg</td>
+ <td style="text-align:left;">string</td>
+ <td>队伍图片地址</td>
+</tr>
+<tr>
+ <td style="text-align:left;">leaderNickname</td>
+ <td style="text-align:left;">string</td>
+ <td>队长名称</td>
+</tr>
+<tr>
+ <td style="text-align:left;">leaderMobile</td>
+ <td style="text-align:left;">string</td>
+ <td>队长手机号码</td>
+</tr>
+<tr>
+ <td style="text-align:left;">countMoney</td>
+ <td style="text-align:left;">number</td>
+ <td>总共捐赠噢啦豆数量</td>
+</tr>
+<tr>
+ <td style="text-align:left;">countOrder</td>
+ <td style="text-align:left;">number</td>
+ <td>总共回收订单数量</td>
+</tr>
+<tr>
+ <td style="text-align:left;">statusName</td>
+ <td style="text-align:left;">String</td>
+ <td>状态名称</td>
+</tr>
+<tr>
+ <td style="text-align:left;">status</td>
+ <td style="text-align:left;">number</td>
+ <td>状态</td>
+</tr>
+<tr>
+ <td style="text-align:left;">createTime</td>
+ <td style="text-align:left;">string</td>
+ <td>创建时间</td>
+</tr>
+<tr>
+ <td style="text-align:left;">remark</td>
+ <td style="text-align:left;">string</td>
+ <td>备注信息（调用过阿里鉴定后，如果包含敏感信息就会将返回信息备注在这里）</td>
+</tr>
+<tr>
+ <td style="text-align:left;">teamTitle</td>
+ <td style="text-align:left;">string</td>
+ <td>队伍描述</td>
+</tr>
+<tr>
+ <td style="text-align:left;">hot</td>
+ <td style="text-align:left;">int</td>
+ <td>点赞数</td>
+</tr>
+<tr>
+ <td style="text-align:left;">descr</td>
+ <td style="text-align:left;">string</td>
+ <td>描述</td>
+</tr>
+</tbody></table><p data-anchor-id="a51q"><strong>备注</strong> </p><ul data-anchor-id="jct4">
+<li>更多返回错误代码请看首页的错误代码描述 <br>
+<hr></li>
+</ul><div class="md-section-divider"></div><h2 data-anchor-id="6x7z" id="上传图片">上传图片</h2><p data-anchor-id="2q4x"><strong>简要描述：</strong> </p><ul data-anchor-id="66j9">
+<li>上传文件接口</li>
+</ul><p data-anchor-id="49d5"><strong>请求URL：</strong>  <br>
+- <code>/common/ossFile/uploadPic</code></p><p data-anchor-id="jclk"><strong>请求方式：</strong> <br>
+- POST </p><p data-anchor-id="rfhr"><strong>参数：</strong> </p><table data-anchor-id="u2a8" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th style="text-align:left;">参数名</th>
+ <th style="text-align:left;">必选</th>
+ <th style="text-align:left;">类型</th>
+ <th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td style="text-align:left;">img</td>
+ <td style="text-align:left;">是</td>
+ <td style="text-align:left;">file</td>
+ <td>上传文件</td>
+</tr>
+</tbody></table><p data-anchor-id="dbw6"><strong>返回示例</strong></p><div class="md-section-divider"></div><pre class="prettyprint linenums prettyprinted" data-anchor-id="krqi" style=""><ol class="linenums"><li class="L0"><code><span class="pln">  </span><span class="pun">{</span></code></li><li class="L1"><code><span class="pln">    </span><span class="str">"status"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"true"</span><span class="pun">,</span></code></li><li class="L2"><code><span class="pln">    </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"200"</span><span class="pun">,</span></code></li><li class="L3"><code><span class="pln">    </span><span class="str">"msg"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span></code></li><li class="L4"><code><span class="pln">    </span><span class="str">"info"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"http://oola-oss.oss-cn-shenzhen.aliyuncs.com/oola-oss/imgs/20171205/2017120515273096363J.jpg"</span></code></li><li class="L5"><code><span class="pun">}</span></code></li></ol></pre><p data-anchor-id="del2"><strong>返回参数说明</strong> </p><table data-anchor-id="kvuz" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th style="text-align:left;">参数名</th>
+ <th style="text-align:left;">类型</th>
+ <th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td style="text-align:left;">info</td>
+ <td style="text-align:left;">string</td>
+ <td>图片地址</td>
+</tr>
+</tbody></table><p data-anchor-id="pbt9"><strong>备注</strong> </p><ul data-anchor-id="uypv">
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul></div>
+    <div class="remark-icons"><div class="remark-icon unselectable remark-icon-empty" style="top: 107px; left: 1343px; display: none;" data-anchor-id="ttyv">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 167px; left: 1343px; display: none;" data-anchor-id="x2m3">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 395px; left: 1343px; display: none;" data-anchor-id="9hk8">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 455px; left: 1343px; display: none;" data-anchor-id="4l28">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 502px; left: 1343px; display: none;" data-anchor-id="qe06">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 539px; left: 1343px; display: none;" data-anchor-id="syp3">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 615px; left: 1343px; display: none;" data-anchor-id="j9th">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 689px; left: 1343px; display: none;" data-anchor-id="xepj">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 736px; left: 1343px; display: none;" data-anchor-id="r3el">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 868px; left: 1343px; display: none;" data-anchor-id="d1ak">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 915px; left: 1343px; display: none;" data-anchor-id="pcl1">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 1354px; left: 1343px; display: none;" data-anchor-id="1roy">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 1401px; left: 1343px; display: none;" data-anchor-id="n8vn">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="ye7k">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="jbbb">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="mqol">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="3f8a">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 1781px; left: 1343px; display: none;" data-anchor-id="iw0q">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 1818px; left: 1343px; display: none;" data-anchor-id="f22n">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="84p0">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="43ji">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 2042px; left: 1343px; display: none;" data-anchor-id="sewu">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="8teg">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="i60r">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 2258px; left: 1343px; display: none;" data-anchor-id="nxyi">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="wmm7">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="top: 3224px; left: 1343px; display: none;" data-anchor-id="gmwr">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count">+</span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="q15p">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="6wjz">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="y3dj">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="12qi">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="iv4j">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="oq4h">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="1e2d">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="fkzp">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="sj3h">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="efz8">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="uul1">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="7sqc">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="b3n2">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="eits">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="rs40">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="ade8">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="nnyz">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="iui7">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="ev9i">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="0vpa">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="54sy">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="x13i">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="lzjf">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="7aww">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="5wui">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="r0z0">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="0zit">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="ic29">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="xce4">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="1pl9">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="aq2i">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="tdd8">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="uwv3">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="t6vs">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="pc5y">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="4715">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="a51q">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="jct4">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="6x7z">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="2q4x">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="66j9">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="49d5">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="jclk">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="rfhr">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="u2a8">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="dbw6">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="krqi">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="del2">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="kvuz">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="pbt9">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div><div class="remark-icon unselectable remark-icon-empty" style="display: none;" data-anchor-id="uypv">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div></div>
+</div>
+
+<!--in page preview buttons. -->
+<div class="in-page-preview-buttons in-page-preview-buttons-full-reader">
+    <ul>
+        <li class="in-page-button dropdown" id="preview-toc-button" title="内容目录 Ctrl+Alt+O">
+            <span class="dropdown-toggle icon-list" data-toggle="dropdown" style="color: rgba(102, 128, 153, 0.45);"></span>
+            <div id="toc-list" class="dropdown-menu theme pull-right theme-white"> <!-- Add theme means this element will be changed when apply theme color. -->
+                <h3>内容目录</h3>
+                <hr>
+                <div class="table-of-contents"><div class="toc">
+<ul>
+<li><a href="https://www.zybuluo.com/zhuozhongzhi/note/1242772#以下共包含了6个接口">以下共包含了6个接口</a><ul>
+<li><a href="https://www.zybuluo.com/zhuozhongzhi/note/1242772#用户登录">用户登录</a></li>
+<li><a href="https://www.zybuluo.com/zhuozhongzhi/note/1242772#获取队伍列表">获取队伍列表</a></li>
+<li><a href="https://www.zybuluo.com/zhuozhongzhi/note/1242772#增加修改队伍信息">增加、修改队伍信息</a></li>
+<li><a href="https://www.zybuluo.com/zhuozhongzhi/note/1242772#删除队伍">删除队伍</a></li>
+<li><a href="https://www.zybuluo.com/zhuozhongzhi/note/1242772#查看详情">查看详情</a></li>
+<li><a href="https://www.zybuluo.com/zhuozhongzhi/note/1242772#上传图片">上传图片</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div id="reader-full-toolbar" class="reader-full-toolbar-shown" style="padding-top: 0;">
+    <ul id="reader-full-toolbar-home" class="preview-button-row">
+        <li class="preview-button-full-reader" id="preview-editor-button" title="撰写文本 Ctrl+Alt+M">
+            <span class="icon-pencil" style="color: rgb(187, 187, 187);"></span>
+        </li>
+    </ul>
+    <ul id="preview-button-row" class="preview-button-row">
+        <li class="preview-button-full-reader dropdown" id="preview-list-button" title="文本列表 Ctrl+Alt+F">
+            <span class="dropdown-toggle icon-reorder" data-toggle="dropdown" style="color: rgb(187, 187, 187);"></span>
+            <ul id="file-list" class="dropdown-menu theme-black pull-right" role="menu" style="max-height: 716px;">
+                    <li>
+                    <ul class="tag-list">
+                        <li class="tag-item item" tag-name="未分类">
+                            <span class="pull-left"><i class="icon-tag"></i><span class="tag-name">未分类</span></span>
+                            <span class="tag-count pull-right">1</span>
+                            <div class="clearfix"></div>
+                        </li>
+                            
+    <li class="file-item item" file-created-date="2018-08-08 12:00:43">
+        <a tabindex="-1" href="https://www.zybuluo.com/zhuozhongzhi/note/1242772" title="【已发布】 2018-08-08 12:15">
+        <i class="icon-share-sign"></i>
+        <span id="1242772" class="whiter-on-black">以下共包含了6个接口</span>
+        </a>
+    </li>
+
+                    </ul>
+                    </li>
+            </ul>
+            <ul id="file-list-topbar" class="dropdown-menu theme-black pull-right" role="menu">
+                <li id="search-file-bar">
+                    <i class="icon-search icon-large"></i>
+                    <input type="text" id="search-file-textbox" placeholder="搜索 zhuozhongzhi 的文稿标题， * 显示全部">
+                    <i class="icon-level-down icon-rotate-90 icon-large"></i>
+                </li>
+                <li id="tag-file-bar">
+                    以下【标签】将用于标记这篇文稿：
+                </li>
+            </ul>
+        </li>
+        <li class="preview-button-full-reader" id="preview-theme-button" title="主题切换 Ctrl+Alt+Y">
+            <span class="icon-adjust" style="color: rgb(187, 187, 187);"></span>
+        </li>
+        <li class="preview-button-full-reader" id="preview-fullscreen-button" title="全屏模式 F11">
+            <span class="icon-fullscreen" style="color: rgb(187, 187, 187);"></span>
+        </li>
+        <li class="preview-button-full-reader wmd-spacer"></li>
+        <li class="preview-button-full-reader dropdown" id="preview-about-button" title="关于本站">
+            <span class="dropdown-toggle icon-info-sign" data-toggle="dropdown" data-hover="dropdown" data-delay="100" data-close-others="true" style="color: rgb(187, 187, 187);"></span>
+            <ul id="about-menu" class="dropdown-menu theme-black pull-right" role="menu">
+                <li title="下载全平台客户端"><a tabindex="-1" href="https://www.zybuluo.com/cmd" target="_blank"><i class="icon-laptop"></i>下载客户端</a></li>
+                <li title="@ghosert"><a tabindex="-1" href="http://www.weibo.com/ghosert" target="_blank"><i class="icon-weibo"></i>关注开发者</a></li>
+                <li title=""><a tabindex="-1" href="https://github.com/ghosert/cmd-editor/issues" target="_blank"><i class="icon-github-alt"></i>报告问题，建议</a></li>
+                <li title="support@zybuluo.com"><a tabindex="-1" href="mailto:support@zybuluo.com" target="_blank"><i class="icon-envelope"></i>联系我们</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<ul id="reader-full-toolbar-tail" class="reader-full-toolbar-tail-shown">
+    <li class="preview-button-full-reader" id="preview-hidden-button" title="隐藏工具栏 Ctrl+Alt+I">
+        <span class="icon-chevron-sign-right" style="color: rgb(187, 187, 187);"></span>
+    </li>
+</ul>
+
+
+
+
+
+
+<!-- side remark, hidden when loading. -->
+<div class="remark-list side-remark-hidden">
+    <div class="remark-items"></div>
+    <div class="leave-remark unselectable"><span class="icon-plus-sign-alt"></span><span>添加新批注</span></div>
+    <div class="new-remark">
+    <div class="remark-head"><a><img src="./以下共包含了6个接口 - 作业部落 Cmd Markdown 编辑阅读器_files/default-head.jpg" style="width: 32px; height: 32px;"></a></div>
+    <div class="remark-author unselectable"><strong>zhuozhongzhi</strong></div>
+    <div class="remark-editor" contenteditable="true" spellcheck="false"></div>
+    <!-- this will be filled up by js.
+    <div class="inline-error">402/400</div> for new remark
+    <div class="inline-error">202/200</div> for new reply
+    -->
+    <div class="remark-footer unselectable">
+        <button class="remark-save btn-link">保存</button>
+        <button class="remark-cancel btn-link">取消</button>
+    </div>
+
+        <!-- clone the template $('.new-remark-reply').html() to here.-->
+    </div>
+</div>
+
+<!-- template for new remark/reply -->
+<div class="new-remark-reply side-remark-hidden">
+    <div class="remark-head"><a><img src="./以下共包含了6个接口 - 作业部落 Cmd Markdown 编辑阅读器_files/default-head.jpg"></a></div>
+    <div class="remark-author unselectable"></div>
+    <div class="remark-editor" contenteditable="true" spellcheck="false"></div>
+    <!-- this will be filled up by js.
+    <div class="inline-error">402/400</div> for new remark
+    <div class="inline-error">202/200</div> for new reply
+    -->
+    <div class="remark-footer unselectable">
+        <button class="remark-save btn-link">保存</button>
+        <button class="remark-cancel btn-link">取消</button>
+    </div>
+</div>
+
+<!-- template for .remark-item/.remark-reply -->
+<div class="remark-item-reply side-remark-hidden">
+    <div class="remark-head"><a><img src="./以下共包含了6个接口 - 作业部落 Cmd Markdown 编辑阅读器_files/default-head.jpg"></a></div>
+    <div class="remark-author unselectable"></div>
+    <div class="remark-delete-link unselectable"><span class="icon-remove"></span></div> <!--This is mainly for deleting remark-reply, shown when author/remark hovering on remark-reply.-->
+    <div class="remark-editor" contenteditable="true" spellcheck="false"></div>
+    <!-- this will be filled up by js.
+    <div class="inline-error">402/400</div> for new remark
+    <div class="inline-error">202/200</div> for new reply
+    -->
+    <div class="remark-footer unselectable">
+        <button class="remark-edit btn-link">修改</button>
+        <button class="remark-save btn-link">保存</button>
+        <button class="remark-cancel btn-link">取消</button>
+        <button class="remark-delete btn-link">删除</button>
+    </div>
+</div>
+
+<!-- template for remark-item-->
+<div class="remark-item side-remark-hidden" data-rand-id="" data-version-id="">
+    <div class="remark-published-link unselectable"><span class="icon-link icon-rotate-90"></span></div>
+    <ul class="remark-options theme unselectable theme-white">
+        <li class="remark-private"><span class="icon-eye-close"></span><span>私有</span></li>
+        <li class="remark-public"><span class="icon-group"></span><span>公开</span></li>
+        <li class="remark-delete"><span class="icon-remove"></span><span>删除</span></li>
+    </ul>
+
+    <!-- clone the template $('.remark-item-reply').html() to here.-->
+
+    <button class="remark-reply-view-more btn-link">查看更早的 5 条回复</button>
+    <div class="remark-replies">
+        <!--
+        <div class="remark-reply">
+            clone the template $('.remark-item-reply').html() to here.
+        </div>
+        -->
+    </div>
+
+    <div class="leave-reply unselectable"><span>回复批注</span></div>
+    <div class="new-reply">
+        <!-- clone the template $('.new-remark-reply').html() to here.-->
+    </div>
+</div>
+
+<!-- jiawzhang NOTICE: .remark-icons will be put to mdeditor.mako and user_note.mako, where next to .wmd-preview -->
+<!-- <div class="remark-icons"></div> -->
+
+<!-- template for remark-icon -->
+<div class="remark-icon unselectable side-remark-hidden remark-icon-empty" style="display: none;">
+    <span class="icon-stack">
+        <i class="glyph-comment"></i>
+        <span class="remark-count"></span>
+    </span>
+</div>
+
+
+<!-- canvas, hidden always, this is used to convert svg to canvas and then convert canvas to png. -->
+<canvas id="svg-canvas-image" class="editor-reader-hidden-always"></canvas>
+
+<!-- This is the image panel to hold enlarged image/svg. -->
+<div id="large-image-panel">
+    <img id="large-image">
+</div>
+
+
+    
+
+
+    <!-- Hidden Popup Modal -->
+    <div id="notification-popup-window" class="modal hide fade theme theme-white" tabindex="-1" role="dialog" aria-labelledby="notification-title" aria-hidden="true">
+        <div class="modal-header theme theme-white">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="notification-title">通知</h3>
+        </div>
+        <div class="modal-body theme theme-white">
+            <p></p>
+        </div>
+        <div class="modal-footer theme theme-white">
+            <button id="notification-cancel" class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+            <button id="notification-confirm" class="btn btn-primary">确认</button>
+        </div>
+    </div>
+
+    <!-- zybuluo's foot -->
+
+    <script src="./以下共包含了6个接口 - 作业部落 Cmd Markdown 编辑阅读器_files/288313bb.base.lib.min.js.下载"></script>
+
+    <script>
+        Namespace('com.zybuluo.base');
+        com.zybuluo.base.initData = {
+            globalPromptUrl: "https://www.zybuluo.com/global/prompt",
+        };
+    </script>
+
+    
+    <!--mathjax-->
+    <!--blacker: 1 below means font weight.-->
+    <script type="text/x-mathjax-config;executed=true">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]], processEscapes: true }, TeX: { equationNumbers: { autoNumber: "AMS" } }, messageStyle: "none", SVG: { blacker: 1 }});
+    </script>
+    <script src="./以下共包含了6个接口 - 作业部落 Cmd Markdown 编辑阅读器_files/mathJax.js.下载"></script>
+    <!--mathjax source code is here: https://github.com/mathjax/MathJax.-->
+    <script src="./以下共包含了6个接口 - 作业部落 Cmd Markdown 编辑阅读器_files/mathJax.js(1).下载"></script>
+
+    <script>
+        Namespace('com.zybuluo.mdeditor.layout');
+        com.zybuluo.mdeditor.layout.initData = {
+            // '' means not logged in, otherwise the logged in username, for mdeditor.mako, this value will be reset in render.js otherwise, for user_note.mako, it's rendered by server side.
+            loggedInUsername: 'zhuozhongzhi',
+            isPageOwner: 'True' === 'True' ? true : false,
+            loginComeFromUrl: 'https://www.zybuluo.com/login?return_to=https%3A%2F%2Fwww.zybuluo.com%2Fzhuozhongzhi%2Fnote%2F1242772',
+            noteRemarksUrl: "https://www.zybuluo.com/note/1242772/remarks", 
+            newNoteRemarkUrl: "https://www.zybuluo.com/note/1242772/remark/new", 
+            updateNoteRemarkUrl: "https://www.zybuluo.com/note/1242772/remark/update", 
+            deleteNoteRemarkUrl: "https://www.zybuluo.com/note/1242772/remark/delete", 
+            publishNoteRemarkUrl: "https://www.zybuluo.com/note/1242772/remark/publish", 
+            newNoteRemarkReplyUrl: "https://www.zybuluo.com/note/1242772/remark_reply/new", 
+            updateNoteRemarkReplyUrl: "https://www.zybuluo.com/note/1242772/remark_reply/update", 
+            deleteNoteRemarkReplyUrl: "https://www.zybuluo.com/note/1242772/remark_reply/delete", 
+        };
+
+        // BEGIN: pace.js configuration
+        window.paceOptions = {
+            // disable others, enable for ajax call only,
+            ajax: true,
+            document: false,
+            elements: false,
+            eventLag: false,
+        };
+        // jiawzhang NOTICE: to make sure pace.js is working for any ajax call especially the jquery ajax, add 'Pace.restart()' into jquery ajax call like '$.post'
+        // Originally, pace 0.5.6 doesn't support jquery ajax, see details in: https://github.com/HubSpot/pace/issues/29
+        // END: pace.js configuration
+
+    </script>
+
+    <script src="./以下共包含了6个接口 - 作业部落 Cmd Markdown 编辑阅读器_files/7a70106e.layout.lib.min.js.下载"></script>
+
+    <script src="./以下共包含了6个接口 - 作业部落 Cmd Markdown 编辑阅读器_files/dc648f35.layout.min.js.下载"></script><div id="medium-editor-toolbar-1" class="medium-editor-toolbar"><ul id="medium-editor-toolbar-actions" class="medium-editor-toolbar-actions clearfix"><li><button data-action="remark" class=" medium-editor-button-first"><i class="icon-comment"></i></button></li><li><button data-action="highlight" class=" medium-editor-button-last"><i class="icon-pencil"></i></button></li></ul></div>
+
+
+
+    
+
+    <!-- https://www.zybuluo.com/static/assets/mdeditor/user_note.lib.min.js -->
+    <!-- -->
+
+    <script>
+        Namespace('com.zybuluo.mdeditor.user_note');
+        com.zybuluo.mdeditor.user_note.initData = {
+            isLoggedIn: 'True',
+            mdeditorUrl: "https://www.zybuluo.com/mdeditor",
+            passwordPassed: 'True' === 'True' ? true : false,
+        };
+    </script>
+
+    <script src="./以下共包含了6个接口 - 作业部落 Cmd Markdown 编辑阅读器_files/6cd3112e.user_note.min.js.下载"></script>
+
+
+
+
+
+    
+<div id="cli_dialog_div"></div></body></html>

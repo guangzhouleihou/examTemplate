@@ -10,6 +10,8 @@ JS框架采用Vue全家桶，CSS采用less、scss，UI采用element-ui，富文�
 * [scss](https://www.sass.hk/guide/)
 * [vue-quill-editor](https://github.com/surmon-china/vue-quill-editor)
 ___
+## API接口文档
+[查看接口文档](https://www.zybuluo.com/zhuozhongzhi/note/1242772)
 ## 项目结构
 ```bash
 ├── README.md
@@ -26,6 +28,7 @@ ___
 │   ├── dev.env.js
 │   ├── index.js
 │   └── prod.env.js
+├── node-server                      # 项目示例demo    
 ├── styles                           # 通用样式    
 ├── index.html                       # 入口 html
 ├── package-lock.json
@@ -46,6 +49,10 @@ ___
 ```
 ___
 ## 构建命令
+* 运行示例项目
+  ```bash
+  npm run server
+  ```
 * 开发环境服务
   ```bash
   npm i && npm run dev
@@ -59,7 +66,7 @@ ___
 ___
 
 ## 招聘环节
- - 笔试（3个小时以内的时间，提前完成则提前结束）
+ - 笔试（3个小时以内的时间，提前完成则提前结束，3个小时内完成多少就多少，请勿须有压力O(∩_∩)O）
  - 面试 （笔试通过后才进入面试，大概15-30分钟）
 
 ## 评分标准
@@ -76,7 +83,7 @@ ___
     
  ## 笔试流程
  - 使用自己的github账号clone本项目
- - 参照[线上demo](http://baidu.com)尽可能多地完成该项目
+ - 运行npm run server，参照[线上demo](http://localhost:3001/)尽可能多地完成该项目
  - 将完成的项目发起pull request推送到主项目，提交的信息为
     date/name: 雷猴招聘，例如 2018/8/7 卓钟侄：雷猴招聘。
     并且将仓库地址发给HR备份
@@ -85,7 +92,8 @@ ___
 ## 备注
   - 项目中已经存在一个简单的example给面试者做简单的参考
   - 请按照上文描述的目录结构划分合理地放置代码文件
-  - store目录下已经提供了一些基本你的vuex的一些封装，开发者根据自身情况考虑是否使用
-  - 如果对接口的调用存放不清楚可参考service目录下的example   
- 
+  - store目录下已经提供了一些基本的vuex的一些封装，开发者可自行考虑是否使用
+  - 接口的调用可参考service目录下的example
+  - 运行npm run server 访问 http://localhost:3001/ 即可查看要实现的demo效果
+  - 实现过程中如果遇到问题可询问HR   
 

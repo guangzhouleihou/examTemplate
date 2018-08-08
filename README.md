@@ -12,6 +12,8 @@ JS框架采用Vue全家桶，CSS采用less、scss，UI采用element-ui，富文�
 ___
 ## API接口文档
 请在运行npm run server 以后查看[查看接口文档](http://localhost:3001/api.html)
+
+若本地查看失败请尝试访问[线上接口文档](https://www.zybuluo.com/zhuozhongzhi/note/1242772)
 ## 项目结构
 ```bash
 ├── README.md
@@ -28,7 +30,7 @@ ___
 │   ├── dev.env.js
 │   ├── index.js
 │   └── prod.env.js
-├── node-server                      # 项目示例demo    
+├── node-server                      # 项目服务    
 ├── styles                           # 通用样式    
 ├── index.html                       # 入口 html
 ├── package-lock.json
@@ -93,7 +95,7 @@ ___
   - 项目中已经存在一个简单的example给面试者做简单的参考
   - 请按照上文描述的目录结构划分合理地放置代码文件
   - store目录下已经提供了一些基本的vuex的一些封装，开发者可自行考虑是否使用
-  - 接口的调用可参考service目录下的example
-  - 运行npm run server 访问 http://localhost:3001/ 即可查看要实现的demo效果
-  - 实现过程中如果遇到问题可询问HR   
+  - api接口的书写与调用可参考service目录下的example
+  - 请运行npm run server 访问 http://localhost:3001 查看要实现的结果示例
+  - coding过程中如果遇到问题可询问HR   
 

@@ -30,8 +30,7 @@ ___
 │   ├── dev.env.js
 │   ├── index.js
 │   └── prod.env.js
-├── node-server                      # 项目服务    
-├── styles                           # 通用样式    
+├── node-server                      # 项目服务      
 ├── index.html                       # 入口 html
 ├── package-lock.json
 ├── package.json

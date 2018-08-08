@@ -91,10 +91,11 @@ ___
  - 笔试结束后请向HR演示效果，HR根据效果进行打分
     
 ## 备注
+  - 项目中可能用到的图片资源已经存放于src/assets目录下
   - 项目中已经存在一个简单的example给面试者做简单的参考
   - 请按照上文描述的目录结构划分合理地放置代码文件
   - store目录下已经提供了一些基本的vuex的一些封装，开发者可自行考虑是否使用
-  - api接口的书写与调用可参考service目录下的example
+  - api接口的书写与调用可参考src/service目录下的example
   - 请运行npm run server 访问 http://localhost:3001 查看要实现的结果示例
   - coding过程中如果遇到问题可询问HR   
 

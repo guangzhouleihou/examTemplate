@@ -3,6 +3,7 @@ const proxy = require('http-proxy-middleware');
 const chalk = require('chalk')
 const app = express()
 const path = require('path')
+const open = require('open')
 app.use(express.static(path.resolve(__dirname, './dist')))
 app.use('/proxy-api', proxy({
     target: 'http://api-tt.oola.cn:8080/oola/',
@@ -34,6 +35,9 @@ app.use('/oola-oss-proxy', proxy({
 
 app.listen(3001, 'localhost', (err) => {
     if(!err) {
-        console.log(chalk.yellow('项目示例已经运行在：localhost:3001, 请打开查看'))
+        console.log(chalk.yellow('项目示例已经运行在：localhost:3001'))
+        console.log(chalk.yellow('查看接口文档请访问：localhost:3001/api.html'))
+      open('localhost:3001')
+      open('localhost:3001/api.html')
     }
 })

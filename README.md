@@ -84,7 +84,7 @@ ___
     
  ## 笔试流程
  - 使用自己的github账号clone本项目
- - 运行npm run server，参照[线上demo](http://localhost:3001/)尽可能多地完成该项目
+ - npm install 安装依赖完毕后，运行npm run server，参照[线上demo](http://localhost:3001/)尽可能多地完成该项目
  - 将完成的项目发起pull request推送到主项目，提交的信息为
     date/name: 雷猴招聘，例如 2018/8/7 卓钟侄：雷猴招聘。
     并且将仓库地址发给HR备份

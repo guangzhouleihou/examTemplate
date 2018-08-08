@@ -11,9 +11,9 @@ JS框架采用Vue全家桶，CSS采用less、scss，UI采用element-ui，富文�
 * [vue-quill-editor](https://github.com/surmon-china/vue-quill-editor)
 ___
 ## API接口文档
-请在运行npm run server 以后查看[查看接口文档](http://localhost:3001/api.html)
+请在运行npm run server 以后查看[接口文档](http://localhost:3001/api.html)
 
-若本地查看失败请尝试访问[线上接口文档](https://www.zybuluo.com/zhuozhongzhi/note/1242772)
+若本地查看失败请尝试访问线上[接口文档](https://www.zybuluo.com/zhuozhongzhi/note/1242772)
 ## 项目结构
 ```bash
 ├── README.md

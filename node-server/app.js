@@ -6,7 +6,7 @@ const path = require('path')
 const open = require('open')
 app.use(express.static(path.resolve(__dirname, './dist')))
 app.use('/proxy-api', proxy({
-    target: 'http://api-tt.oola.cn:8080/oola/',
+    target: 'https://apia-demo.gzleihou.cn/oola/',
     changeOrigin: true,
     pathRewrite: {
         '/proxy-api': ''

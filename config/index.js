@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/proxy-api': {
-        target: 'http://api-tt.oola.cn:8080/oola/', // api 的代理的实际路径
+        target: 'https://apia-demo.gzleihou.cn/oola/', // api 的代理的实际路径
         changeOrigin: true, // 变源
         pathRewrite: { // 路径重定向
           '/proxy-api': ''
